@@ -1,370 +1,560 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфолио</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="logo" type="image/png" href="images/favicon_min.png" size="32x32">
-  <link rel="logo" type="image/png" href="images/favicon.png" size="512x512">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
 
-<body id="body">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Kamil Dudzicz">
 
-  <header class="header" style="background-image: url('images/bg.jpg');">
-    <div class="container">
+    <title>DUD-COM</title>
 
-      <nav class="menu menu_bg">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-        <a class="logo" href="#">
-          <img src="images/logo.svg" width="159" alt="Лого">
-        </a>
-        <button class="menu__burger" type="button">
-          <span class="sr-only">
-            меню
-          </span>
-        </button>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#about">
-              Обо мне
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#skills">
-              Навыки
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#services">
-              Услуги
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#portfolio">
-              Портфолио
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#rewiews">
-              Отзывы
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#contacts">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-      <div class="header__content">
-        <h1 class="header__title">
-          Привет, я Иван Иванов
-          <span class="header__subtitle">
-            frontend-разработчик
-          </span>
-        </h1>
-        <a class="header__link" href="#">
-          смотреть работы
-        </a>
-      </div>
-    </div>
-  </header>
+    <!-- Google Maps -->
+    {# <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXTZ9_8abOuGPGl57JhnG5leKYwECGzbQ"></script> #}
 
-  <main class="main">
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
 
-    <section class="about section" id="about">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
       <div class="container">
-
-        <h2 class="title">
-          Обо мне
-        </h2>
-
-        <div class="about__text">
-          <p>
-            Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой более года. До
-            разработки
-            занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за что взяться, чтобы дело приносило
-            удовольствие и
-            деньги, пока не наткнулся на один интересный курс.
-          </p>
-          <p>
-            С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то сложнее.
-            Каждодневная
-            работа над навыками и усердие, с которым я подходил к обучению, уже через несколько месяцев принесли плоды -
-            я взял
-            первый заказ на фрилансе. С отзывами клиентов и примерами работ можно ознакомиться ниже.
-          </p>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top"><img src="img/dudcom-logo.png"></a>
         </div>
-      </div>
-    </section>
 
-    <section class="skills section" id="skills">
-      <div class="container">
-        <h2 class="title">
-          Навыки
-        </h2>
-        <div class="skills__inner">
-          <img class="skills__portrait" src="images/skills_bg.jpg" width="415" alt="портрет верстальщика">
-          <ul class="skills__info">
-            <li class="skills__item">
-              html
-              <div class="skills__item-grey">
-                <div class="skills__item-nevy" style="width: 85%">
-                </div>
-              </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
             </li>
-            <li class="skills__item">
-              css
-              <div class="skills__item-grey">
-                <div class="skills__item-nevy" style="width: 80%">
-                </div>
-              </div>
+            <li>
+              <a class="page-scroll" href="#portfolio">Rozwiązania</a>
             </li>
-            <li class="skills__item">
-              js
-              <div class="skills__item-grey">
-                <div class="skills__item-nevy" style="width: 56%">
-                </div>
-              </div>
+            <li>
+              <a class="page-scroll" href="#services">Portfolio</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">O nas</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#contact">Kontakt</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#rodo">RODO</a>
             </li>
           </ul>
         </div>
-    </section>
-
-    <section class="services section" id="services">
-      <div class="container">
-        <h2 class="title">
-          Услуги
-        </h2>
-        <ul class="services_items">
-          <li class="services__item" style="background-image: url('images/icon1.svg');">
-            <h3 class="services__title">
-              Вёрстка проектов
-            </h3>
-            <p class="services__text">
-              Сделаю качественную вёрстку вашего проекта по предоставленному макету или примеру
-            </p>
-          </li>
-          <li class="services__item" style="background-image: url('images/icon2.svg');">
-            <h3 class="services__title">
-              Посадка на CMS
-            </h3>
-            <p class="services__text">
-              Интегрирую ваш проект в одну из популярных CMS
-            </p>
-          </li>
-          <li class="services__item" style="background-image: url('images/icon3.svg');">
-            <h3 class="services__title">
-              Поддержка сайта
-            </h3>
-            <p class="services__text">
-              Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта
-            </p>
-          </li>
-        </ul>
+        <!-- /.navbar-collapse -->
       </div>
-    </section>
+      <!-- /.container-fluid -->
+    </nav>
 
-     <section class="portfolio section" id="portfolio">
+    <!-- Header -->
+    <header>
       <div class="container">
-        <h2 class="title">Мои работы</h2>
-
-        <ul class="portfolio__filter">
-          <li class="portfolio__list">
-            <button class="portfolio_btn" type="button" data-filter="all">Все работы</button>
-          </li>
-          <li class="portfolio__list">
-            <button class="portfolio_btn" type="button" data-filter=".category-a">Лендинги</button>
-          </li>
-          <li class="portfolio__list">
-            <button class="portfolio_btn" type="button" data-filter=".category-b">Корпоративные</button>
-          </li>
-          <li class="portfolio__list">
-            <button class="portfolio_btn" type="button" data-filter=".category-c">E-commerce</button>
-          </li>
-        </ul>
-        <ul class="portfolio__content">
-          <li class="portfolio__item mix category-a">
-            <a href="images/portfolio/large1.jpg" data-fancybox="portfolio">
-              <img class="portfolio__img" src="images/portfolio/1.jpg" alt="город на реке">
-            </a>
-          </li>
-          <li class="portfolio__item mix category-a">
-            <a href="images/portfolio/large2.jpg" data-fancybox="portfolio">
-              <img class="portfolio__img" src="images/portfolio/2.jpg" alt="мегаполис">
-            </a>
-          </li>
-          <li class="portfolio__item mix category-b">
-            <a href="images/portfolio/large3.jpg" data-fancybox="portfolio">
-              <img class="portfolio__img" src="images/portfolio/3.jpg" alt="лодки под мостом">
-            </a>
-          </li>
-          <li class="portfolio__item mix category-b">
-            <a href="images/portfolio/large4.jpg" data-fancybox="portfolio">
-              <img class="portfolio__img" src="images/portfolio/4.jpg" alt="берег с пальмами">
-            </a>
-          </li>
-          <li class="portfolio__item mix category-c">
-            <a href="images/portfolio/large5.jpg" data-fancybox="portfolio">
-              <img class="portfolio__img" src="images/portfolio/5.jpg" alt="синий мост">
-            </a>
-          </li>
-          <li class="portfolio__item mix category-c">
-            <a href="images/portfolio/large6.jpg" data-fancybox="portfolio">
-              <img class="portfolio__img" src="images/portfolio/6.jpg" alt="человек на скале">
-            </a>
-          </li>
-        </ul>
-        <button class="button" type="button">
-          Загрузить еще
-        </button>
-        <span class="sr-only">
-          Загрузить еще
-        </span>
-      </div>
-    </section>
-
- <section class="rewiews section" id="rewiews">
-      <div class="container">
-        <h2 class="title">
-          Отзывы клиентов
-        </h2>
-        <div class="rewiews__inner">
-          <blockquote class="rewiews__quote">
-            <img class="rewiews__img" src="images/autor_quote.jpg" alt="автор цитаты">
-            <cite class="rewiews__autor">
-              Марк Цукерберг
-            </cite>
-            Фантастика! Я всецело доволен
-            работой этого специалиста.
-            Быстро и качественно. Рекомендую!
-          </blockquote>
-          <a class="rewiews__video-link" style="background-image: url('images/video_bg.jpg');" data-fancybox
-            href="https://www.youtube.com/watch?v=BY9T0pXU1NM">
-          </a>
+        <div class="intro-text">
+          <div class="intro-lead-in">Witamy w DUD-COM!</div>
+          <div class="intro-heading">Zapraszamy</div>
+          <a href="#portfolio" class="page-scroll btn btn-xl">Zobacz czym się zajmujemy</a>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="statistics section">
+    <!-- Services Section -->
+    <section id="portfolio" class="bg-light-gray">
       <div class="container">
-        <ul class="statistics__items">
-          <li class="statistics__item" style="background-image: url('images/bag.svg');">
-            <p class="statistics__text">
-              Выполненных работ
-            </p>
-            56
-          </li>
-          <li class="statistics__item" style="background-image: url('images/clients.svg'); ">
-            <p class="statistics__text">
-              Довольных клиентов
-            </p>
-            23
-          </li>
-          <li class="statistics__item" style="background-image: url('images/coffee.svg');">
-            <p class="statistics__text">
-              Выпито чашек кофе
-            </p>
-            477
-          </li>
-          <li class="statistics__item" style="background-image: url('images/note.svg');">
-            <p class="statistics__text statistics__t ">
-              Всего отзывов
-            </p>
-            48
-          </li>
-        </ul>
-      </div>
-    </section>
-
-<!--    <section class="contacts section" id="contacts">
-      <div class="container">
-        <h2 class="title">
-          Контакты
-        </h2>
-        <div class="contacts__inner">
-          <address class="contacts__items">
-            <p class="contacts__text">
-              Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона, email, в
-              соцсетях:
-            </p>
-            <ul class="contacts__connect">
-              <li class="contacts__tel">
-                <a class="contacts__link" href="tel:+380501111111">
-                  +38 (050) 111 11 11
-                </a>
-              </li>
-              <li class="contacts__mail">
-                <a class="contacts__link" href="mailto:frontend-monster@email.com">
-                  frontend-monster@email.com
-                </a>
-              </li>
-            </ul>
-            <ul class="social">
-              <li class="social__icons">
-                <a class="social__icon" style="background-image: url('images/instagram.svg');" href="#"><span
-                    class="sr-only">instagram</span>
-                </a>
-              </li>
-              <li class="social__icons">
-                <a class="social__icon" style="background-image: url('images/facebook.svg');" href="#"><span
-                    class="sr-only">facebook</span>
-                </a>
-              </li>
-              <li class="social__icons">
-                <a class="social__icon" style=" background-image: url('images/telegram.svg');" href="#"><span
-                    class="sr-only">telegram</span>
-                </a>
-              </li>
-            </ul>
-          </address>
-
-          <form class="form">
-            <div class="form__top">
-              <label class="form__label">
-                Ваше имя
-                <input class="form__input" name="name" type="text" placeholder="Иван" required>
-              </label>
-              <label class="form__label">
-                Номер телефона
-                <input class="form__input" name="telNumber" type="tel" placeholder="+380501111111" required>
-              </label>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Rozwiązania</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/obsluga.jpg" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Obsługa klienta</h4>
             </div>
-            <label class="form__label">
-              Ваше сообщение
-              <textarea class="form__input form__textarea" name="massage" placeholder="Текст вашего сообщения"
-                required></textarea>
-            </label>
-            <button class="button" type="submit"><span class="sr-only">
-              Отправить
-            </span>
-              Отправить
-            </button>
-          </form>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/sell.jpg" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Sprzedaż</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/agro.jpg" class="img-responsive" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Pieczarkarnie</h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="footer">
-    <a class="logo" href="#body">
-      <img src="images/logo.svg" width="159" alt="Лого">
-    </a>
-  </footer> -->
+    <!-- Portfolio Grid Section -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Mamy przyjemność przedstawić Państwu krótką listę rozwiązań, które
+            oferujemy aż od 2008 roku!! Dołącz do grona zadowolonych klientów już dziś
+          </h3>
+          </div>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <div class="row text-center">
+
+          <div class="col-md-4 more">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">
+            Obsługa firm
+          </h4>
+            <input type="checkbox" class="read-more-state" id="post-1"/>
+            <p class="read-more-wrap">
+            Świadczymy usługi profesjonalnej obsługi informatycznej firm. Oferujemy stałą opiekę lub doraźną pomoc w razie potrzeby. Naszymi klientami jest kilkanaście firm na terenie całej Polski. Są to salony <span class="read-more-target">amochodowe, salony meblowe, pieczarkarnie, szkoły, hotele, urzędy miasta i gmin i wiele innych podmiotów. Pomagamy na zasadzie stałej współpracy, jak również doraźnie, w razie potrzeby. Oferujemy pomoc w doborze sprzętu – m.in. dedykowanych serwerów, wysokiej jakości urządzeń sieciowych gwarantujących najwyższy poziom bezpieczeństwa, jak również komputerów, laptopów czy drukarek.
+              Posiadamy własną, profesjonalnie wyposażoną serwerownię, w której udostępniamy miejsce na koalokację serwerów klientów.
+              Tworzymy oprogramowanie spersonalizowane pod klienta, które wspomaga m.in.:
+              - zarządzanie produkcją, transportem, personelem, realizacją zamówień i obsługą klienta
+              - rozliczanie pracowników
+              - przepływ informacji pomiędzy poszczególnymi działami/obiektami firmy w czasie
+              rzeczywistym Naszym flagowym, znanym w całej Europie systemem jest „Pieczara” – <a class="service_link"
+                href="http://www.systempieczara.pl/" target="_blank">www.systempieczara.pl</a>
+              </span>
+            </p>
+            <label for="post-1" class="read-more-trigger"></label>
+          </div>
+
+          <div class="col-md-4 more">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">
+            Obsługa szkół
+          </h4>
+            <input type="checkbox" class="read-more-state" id="post-2"/>
+            <p class="read-more-wrap">
+            Zajmujemy się profesjonalną obsługą informatyczną instytucji edukacyjnych. Oferujemy stałą opiekę lub
+            doraźną pomoc w razie potrzeby. Naszymi klientami jest kilkanaście szkół w całym województwie <span
+              class="read-more-target">podlaskim. Pomagamy w doborze sprzętu i oprogramowania, jak również pomagamy w
+              ich zakupie. Doradzamy i instalujemy tablice i monitory interaktywne od wielu lat i posiadamy w tej
+              dziedzinie bardzo duże doświadczenie - kilkadziesiąt instalacji tablic interaktywnych na terenie całej
+              Polski!
+              Jako partnerzy wielu firm oferujemy rozwiązania dedykowane edukacji:
+              - G Data dla Szkół (program antywirusowy)
+              - Microsoft Office dla szkół
+              - Net Support
+            </span></p>
+            <label for="post-2" class="read-more-trigger"></label>
+          </div>
+
+          <div class="col-md-4 more">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">
+            Zabezpieczenia sieciowe
+          </h4>
+            <input type="checkbox" class="read-more-state" id="post-3"/>
+            <p class="read-more-wrap">
+            Tworzymy od podstaw bezpieczne sieci komputerowe, jak również pomagamy ulepszyć istniejące już sieci.
+            Jesteśmy partnerem Watchguard – firmy oferującej najbardziej wszechstronną ofertę usług zabezpieczeń
+            <span class="read-more-target">sieciowych na rynku, zaczynając od IPS, GAV, kontroli aplikacji, blokowania spamu i filtrowania internetowego, po bardziej zaawansowane usługi chroniące przed ransomware i utratą poufnych danych. WatchGuard uznawany jest jako lider i wizjoner w raportach Gartnera dla UTM/NGFW. Na swoim koncie ponad milion wdrożonych rozwiązań do zapewniania bezpieczeństwa, zarówno w sektorze małych i średnich rzedsiębiorstw, jak i dużych firm na całym świecie
+            </span>
+            </p>
+            <label for="post-3" class="read-more-trigger"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">O nas</h2>
+            <h3 class="section-subheading text-muted">
+            Jesteśmy silnym i stabilnym zespołem z wieloletnim doświadczeniem w
+            branży IT. Zapewniamy najwyższą jakość świadczonych usług. Oferujemy profesjonalną obsługę informatyczną
+            firm i klientów prywatnych. Z naszych usług korzysta już wiele firm i szkół na terenie całej Polski,
+            Białorusi i Ukrainy. Dzięki stałej współpracy uzyskują Państwo stały dostęp do specjalistów z branży IT bez
+            ponoszenia dodatkowych kosztów zatrudnienia. Posiadamy szeroką ofertę sprzętu komputerowego, sieciowego i
+            urządzeń biurowych.
+            Jako nieliczni w branży zajmujemy się tworzeniem i wdrażaniem specjalistycznego oprogramowania z branży
+            medycznej oraz przemysłowej. Tworzymy dedykowane rozwiązania pod indywidualne potrzeby firmy, dzięki czemu
+            uzyskujemy najlepsze efekty i pełne zadowolenie naszych klientów.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Doświadczenie</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Nasz zespół to doświadczeni specjaliści, dzięki którym oferujemy Państwu
+                    nowoczesne rozwiązania technologiczne oparte na sprawdzonych technologiach.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Profesjonalizm</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Współpracując z naszymi klientami dokładamy wszelkich starań, aby ofertowane
+                    rozwiązania były trwałe i maksymalnie użyteczne. Doradzamy i wdrażamy zgodnie z potrzebami
+                    przedsiębiorstwa.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Indywidualne podejście</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                    Każdego klienta staramy się traktować indywidualnie, aby zapewnić mu najlepiej
+                    dopasowane rozwiązanie. Dzięki temu jesteśmy w stanie zaoferować rozwiązania idealnie dopasowane do
+                    potrzeb firmy.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="subheading">Najwyższa jakość</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">
+                    Oferując najwyższą jakość produktów i usług cenimy Państwa czas i pieniądze.
+                  </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>A co możemy
+                  <br>zrobić dla
+                  <br>Ciebie?
+                </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Kontakt</h2>
+            <h3 class="section-subheading text-troche-muted">
+            Masz pytanie, napisz nam
+            <a href="mailto:biuro@dud-com.pl">
+              maila</a>
+            lub zadźwoń:
+            <a>784 502 121</a>
+            </h3>
+            <h3 class="section-subheading text-troche-muted">
+            DUD-COM<br/>
+            ul. Władysława Broniewskiego 4 lok.206/1<br/>
+            15-748 Białystok</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2866.6825921006116!2d23.132639413804476!3d53.141774197503736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc6c32ce1589%3A0xf1787f558ba0ac85!2sW%C5%82adys%C5%82awa%20Broniewskiego%204%2F206%201%2C%2015-748%20Bia%C5%82ystok!5e0!3m2!1sru!2spl!4v1666169848619!5m2!1sru!2spl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Rodo Section -->
+    <section id="rodo">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-left">
+            <h3 class="section-subheading text-troche-muted">
+            1. Administratorem Państwa danych osobowych jest DUD-COM
+            Dudzicz Sp. J. z siedzibą w Białymstoku przy ul. Jałowcowej 26, NIP: 542-325-84-70, REGON: 364971055 (zwany
+            dalej „Administratorem”). Z Administratorem można się skontaktować przy pomocy telefonu pod numerem
+            784502121, listownie i osobiście pod adresem ul. Jałowcowa 26, 15-810 Białystok oraz za pośrednictwem poczty
+            elektronicznej, przesyłając informacje na adres mail@dpo.bialystok.pl<br/>
+            2. Administrator powołał Inspektora Ochrony Danych, z którym kontakt jest możliwy za pośrednictwem poczty
+            elektronicznej, przesyłając informacje na adres mail@dpo.bialystok.pl oraz telefonicznie pod numerem
+            telefonu 784502121.<br/>
+            3. Państwa dane osobowe będą przetwarzane w celu udzielenia odpowiedzi na Państwa wiadomość.<br/>
+            4. Podstawa prawna przetwarzania Państwa danych osobowych jest prawnie uzasadniony interes Administratora,
+            polegający na obsłudze Państwa korespondencji (art. 6 ust. 1 lit. f RODO).<br/>
+            5. Dostęp do Państwa danych będą mieć nasi pracownicy, podwykonawcy oraz podmioty świadczące usługi na naszą
+            rzecz (tj. dział obsługi klienta, usługi IT i wsparcia technicznego), które muszą mieć dostęp do danych, aby
+            wykonywać swoje obowiązki.<br/>
+            6. Państwa dane będą przechowywane przez okres niezbędny do rozpatrzenia zapytania.<br/>
+            7. Przysługuje Państwu prawo do:<br/>
+            - zadania dostępu do swoich danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, a
+            także prawo do przenoszenia danych,<br/>
+            - wniesienia w dowolnym momencie sprzeciwu wobec przetwarzania Państwa danych osobowych z przyczyn
+            związanych z Państwa szczególna sytuacja,<br/>
+            - wniesienia skargi do organu nadzorczego, tj. Prezesa Urzędu Ochrony Danych Osobowych.<br/>
+            8. Podanie danych jest dobrowolne, jednak ich niepodanie będzie skutkowało brakiem możliwości udzielenia
+            odpowiedzi na Państwa wiadomość.<br/>
+            9. Państwa dane osobowe nie będą wykorzystywane do podejmowania zautomatyzowanych decyzji, w tym
+            profilowania.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; DUD-COM 2020</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li>
+                <a href="https://www.facebook.com/DUD-COM-107392899354768/">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <span class="copyright">Wykonanie Wearsoft</span>
+            <ul class="list-inline">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Obsługa klienta</h2>
+                  <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                  <p>
+                  Zajmujemy się profesjonalną obsługą klienta indywidualnego i biznesowego.
+                  Oferujemy naprawę sprzętu komputerowego oraz kompleksowe doradztwo w dziedzinie informatyki:
+                  bezpieczeństwa, sieci, sprzętu, oprogramowania itp.
+                </p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                  Zamknij</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <h2>Sprzedaż</h2>
+                  <p class="item-intro text-muted">Prowadzimy sprzedaż sprzętu komputerowego:
+                  <br> - komputery i laptopy (nowe i poleasingowe)
+                  <br> - drukarki
+                  <br> - urządzenia peryferyjne: klawiatury, myszki, głośniki, kamerki, itp.
+                  <br> - części komputerowe: płyty główne, procesory, pamięci RAM itp..
+                  <br> - urządzenia sieciowe: routery, switche, access pointy
+                  <br> - oprogramowanie: systemy operacyjne, oprogramowanie biurowe, antywirusy
+                  <br> - dyski twarde, pendrive
+                  <br> - kable
+                  <br> - zasilacze awaryjne UPS – jesteśmy autoryzowanym partnerem EVER – polskiego producenta
+                  specjalizującego się w rozwiązaniach zasilania gwarantowanego
+                </p>
+                  <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                  <p></p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                  Zamknij</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2>Pieczarkarnie</h2>
+                  <p class="item-intro text-muted"> - SYSTEM PIECZARA - </p>
+                  <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                  <p>Mamy przyjemność poinformować Państwa, że stworzony przez nas system do pieczarkarni jest używany w
+                  20 pieczarkarniach w Polsce, na Białorusi i Ukrainie. Nasze oprogramowanie jest spersonalizowane do
+                  indywidualnych potrzeba każdego zakładu produkcyjnego. Posiadamy duże doświadczenie w tej branży, nie
+                  tylko w kwestii systemu do ewidencjonowania zbioru ale również do wielu innych procesów zarządzania
+                  uprawą pieczarek. Nasz system jest modułowy, dzięki czemu możemy idealnie dopasować go do danego
+                  obiektu. Nasz system to doświadczenie wielu pieczarkarni oraz innowacyjne rozwiązania, których Państwo
+                  nie znajdą nigdzie indziej. System pieczara to nowoczesne oprogramowanie naszej produkcji, dzięki
+                  czemu cały czas rozwijane o nowe funkcjonalności i pomysły, które sprawią, że Państwa pieczarkarnia
+                  wykorzysta w pełni swój potencjał.</p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                  Zamknij</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXTZ9_8abOuGPGl57JhnG5leKYwECGzbQ&callback=initMap&v=weekly"
+      defer></script>
+    <script>
+      let map: google.maps.Map;
+
+      function initMap(): void {
+        map = new google
+          .maps
+          .Map(document.getElementById("map")as HTMLElement, {
+            center: {
+              lat: -34.397,
+              lng: 150.644
+            },
+            zoom: 8
+          });
+      }
+
+      declare global {
+        interface Window {
+          initMap: () => void;
+        }
+      }
+      window.initMap = initMap;
+      export {};
+    </script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+    <script src="js/agency.min.js"></script>
+
+  </body>
 
 </html>
